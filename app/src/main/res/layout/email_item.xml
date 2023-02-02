@@ -12,9 +12,13 @@
         android:id="@+id/senderTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:padding="5dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/teal_700"
+        android:fontFamily="cursive"
+        app:layout_constraintBottom_toTopOf="@+id/titleTv"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Hedwig" />
 
@@ -22,9 +26,10 @@
         android:id="@+id/titleTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
         android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senderTv"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:text="Help on Assignment #2" />
 
     <TextView
@@ -37,4 +42,12 @@
         android:lines="1"
         android:ellipsize="end"
         tools:text="Have you been able to finish the latest assignment? I'm stuck on the 3rd step and don't quite know what's wrong." />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slim_peter" />
 </androidx.constraintlayout.widget.ConstraintLayout>
